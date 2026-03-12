@@ -15,16 +15,10 @@
 ## 安装 / 使用
 
 - `Codex App`：从本仓库路径 `codex-app-explain` 安装
-- GitHub 路径安装示例：
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <owner>/codex-app-explain-skill \
-  --path codex-app-explain \
-  --dest /tmp/codex-skill-install-test
-```
-
-安装后重启 `Codex App`，让新 skill 被发现。
+- GitHub 安装目标：
+  - repo：`<owner>/codex-app-explain-skill`
+  - path：`codex-app-explain`
+- 安装后重启 `Codex App`，让新 skill 被发现。
 
 ## 触发示例
 
@@ -43,7 +37,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 这个公开版 skill 保持通用、可复用。
 
 - 不包含个人 memory 文件、本地 profile 数据或私有 companion workflow。
-- 不使用任何绝对本地路径。
+- 公开源码中不内置任何个人绝对路径。
 - 所有示例都保持通用，不绑定课程、机构或个人身份。
 
 ## 仓库结构

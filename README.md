@@ -17,16 +17,10 @@ bounded homework-step explanation.
 ## Install / Use
 
 - `Codex App`: install the skill from this repo path `codex-app-explain`
-- GitHub path install example:
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <owner>/codex-app-explain-skill \
-  --path codex-app-explain \
-  --dest /tmp/codex-skill-install-test
-```
-
-Restart `Codex App` after installation so the new skill is discovered.
+- GitHub install target:
+  - repo: `<owner>/codex-app-explain-skill`
+  - path: `codex-app-explain`
+- Restart `Codex App` after installation so the new skill is discovered.
 
 ## Trigger Examples
 
@@ -46,7 +40,7 @@ This public skill keeps the workflow generic and reusable.
 
 - It excludes personal memory files, local profile data, and private companion
   workflows.
-- It uses no absolute local paths.
+- The published source embeds no personal absolute paths.
 - It keeps examples generic rather than course-specific or identity-specific.
 
 ## Repository Layout
