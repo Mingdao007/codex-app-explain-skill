@@ -16,6 +16,11 @@ safe stopping at the supported boundary.
 Follow the host environment's active formatting rules if they are available.
 Otherwise, use this skill's bundled teaching contract and references.
 
+This public skill owns explanation routing, not persistent formatting memory.
+When a host environment provides a separate output-rule or rendering workflow,
+follow that workflow for notation, labels, and layout while keeping this skill
+responsible for teaching route selection.
+
 Keep persistent memory or profile updates in the host environment rather than
 inside this skill.
 
@@ -47,6 +52,13 @@ Read only the minimum context needed for the current blocker.
 1. The host environment's active answer-format or notation rules, if available
 2. The user's cited source material or local project material
 3. This skill's bundled references when they help disambiguate the workflow
+
+Use `references/explanation-modes.md` when you need the public mode split for:
+
+- single-concept explanation
+- compact prerequisite-chain rebuild
+- sentence-by-sentence paper reading
+- full layered teaching
 
 For topic material:
 
@@ -93,6 +105,30 @@ Default behavior:
 - Re-answer the same topic directly when the previous version failed on
   clarity, structure, or formatting.
 
+Public mode split:
+
+- `short-concept mode`
+  - Use for one concept, one term, one symbol family, or one local blocker.
+  - Keep the answer local: definition first, one minimal example when needed,
+    then intuition or application only if it still helps.
+- `prerequisite-chain mode`
+  - Use when the user's real blocker is not one sentence or one formula, but a
+    short hidden dependency chain such as state -> trajectory -> flow map ->
+    observable.
+  - Name the hidden chain, rebuild it in dependency order, then stitch back to
+    the source.
+- `paper-sentence mode`
+  - Use only when the user explicitly asks for sentence-by-sentence or
+    passage-by-passage reading of a paper, PDF, or note.
+  - Preserve the source sentence visibly, then explain it in a low-barrier
+    pass and a deeper interpretation pass.
+  - Add a local concept note only when that sentence contains a true blocker.
+  - Optional paragraph-level and section-level synthesis may follow after the
+    relevant local blocks.
+- `full-layered mode`
+  - Use for full derivations, from-basic-to-rigorous rebuilds, or when the
+    topic is new enough that a compact answer would hide the real bridge steps.
+
 ### 4. Deliver the Explanation
 
 Deliver the explanation in a deterministic layered order when full depth is
@@ -113,6 +149,15 @@ Required behavior while explaining:
   otherwise.
 - Choose an analogy grounded in the user's background or everyday experience
   when an analogy materially improves understanding.
+- In sentence-by-sentence paper reading, keep the source text visually
+  separate, preserve its wording, and let the host environment decide the exact
+  labels and layout.
+- In sentence-by-sentence paper reading, prefer one low-barrier pass followed
+  by one deeper interpretation pass, rather than jumping straight to dense
+  formal commentary.
+- When a paragraph or section needs a synthesis block, keep that synthesis at
+  the paragraph or section level instead of repeating the sentence-by-sentence
+  content.
 
 ### 5. Change Route After Repeated Blockage
 

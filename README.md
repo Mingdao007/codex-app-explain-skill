@@ -6,12 +6,22 @@ This repository ships one installable `Codex App` skill for explanation work:
 concept teaching, derivation unpacking, slide or PDF passage explanation, and
 bounded homework-step explanation.
 
+This public repository now also documents the stable mode split used for these
+tasks:
+
+- `short-concept mode` for one concept or one local blocker
+- `prerequisite-chain mode` for hidden dependency chains
+- `paper-sentence mode` for explicit sentence-by-sentence reading
+- `full-layered mode` for full rebuilds and derivations
+
 ## What Ships
 
 - installable skill:
   [`codex-app-explain`](./codex-app-explain)
 - bundled references for teaching principles, source binding, and route
   adaptation
+- a public mode reference for concept, chain, sentence-reading, and layered
+  teaching routes
 - root-level docs for installation, scope, and privacy boundary
 
 ## Install / Use
@@ -42,6 +52,17 @@ This public skill keeps the workflow generic and reusable.
   workflows.
 - The published source embeds no personal absolute paths.
 - It keeps examples generic rather than course-specific or identity-specific.
+
+## Companion Boundary
+
+This repository is the teaching-workflow half of the stack.
+
+- It owns route selection, source binding, prerequisite handling, and stop
+  conditions.
+- It does not own persistent user memory or user-specific formatting.
+- When a host environment provides a separate output-rules skill, that
+  companion should own notation and layout while this skill continues to own
+  the teaching route.
 
 ## Repository Layout
 

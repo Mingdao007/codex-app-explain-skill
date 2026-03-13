@@ -3,12 +3,19 @@
 这是一个面向 `Codex App` 的公开教学 skill，用于分层讲解与重新讲解：
 概念解释、推导拆解、slide 或 PDF 段落说明，以及有限范围内的作业步骤讲解。
 
+这个公开仓库现在还明确公开了稳定的模式拆分：
+
+- `short-concept mode`：单个概念或单个局部卡点
+- `prerequisite-chain mode`：隐藏前置概念链
+- `paper-sentence mode`：显式逐句 / 逐段读 paper
+- `full-layered mode`：完整重建与推导
+
 ## 仓库交付物
 
 - 可安装 skill：
   [codex-app-explain](./codex-app-explain)
 - 配套引用文件：
-  教学原则、source binding、route adaptation
+  教学原则、source binding、route adaptation、mode split
 - 根目录文档：
   安装方式、范围说明、隐私边界
 
@@ -39,6 +46,15 @@
 - 不包含个人 memory 文件、本地 profile 数据或私有 companion workflow。
 - 公开源码中不内置任何个人绝对路径。
 - 所有示例都保持通用，不绑定课程、机构或个人身份。
+
+## Companion Boundary
+
+这个仓库负责的是 teaching workflow 这一半。
+
+- 它负责 route selection、source binding、前置概念处理，以及何时停下。
+- 它不负责持久化的个人 memory，也不负责用户私有格式偏好。
+- 如果宿主环境还有单独的 output-rules skill，那么 notation 和 layout
+  应由那个 companion 负责；本 skill 继续只负责教学路线。
 
 ## 仓库结构
 
