@@ -37,3 +37,10 @@ These principles define the public teaching contract for `codex-app-explain`.
 - Reply in the user's current conversation language unless the user asks
   otherwise.
 - Keep terminology consistent across one explanation.
+
+## 7. Make long explanations scannable
+
+- When a long explanation changes function clearly, for example from a local
+  example to a formal source or from a direct verdict to a synthesis, prefer a
+  visible structural separator when the host environment supports one.
+- Do not force a separator after every paragraph.

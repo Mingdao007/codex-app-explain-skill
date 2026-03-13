@@ -111,6 +111,12 @@ Public mode split:
   - Use for one concept, one term, one symbol family, or one local blocker.
   - Keep the answer local: definition first, one minimal example when needed,
     then intuition or application only if it still helps.
+  - If the blocker is a logic-role confusion such as statement versus proof,
+    open with one minimal plain example that stays close to the source
+    sentence pattern, then give the direct role judgment, then return to the
+    formal object.
+  - If the blocker is an object-boundary confusion, prefer one local contrast
+    example or compact counterexample at the first useful distinction point.
 - `prerequisite-chain mode`
   - Use when the user's real blocker is not one sentence or one formula, but a
     short hidden dependency chain such as state -> trajectory -> flow map ->
@@ -130,6 +136,8 @@ Public mode split:
   - Add a local concept note only when that sentence contains a true blocker.
   - Optional paragraph-level and section-level synthesis may follow after the
     relevant local blocks.
+  - Let the host environment own exact micro-label wording, divider placement,
+    and sentence-block layout when such formatting rules already exist.
 - `full-layered mode`
   - Use for full derivations, from-basic-to-rigorous rebuilds, or when the
     topic is new enough that a compact answer would hide the real bridge steps.
@@ -164,9 +172,16 @@ Required behavior while explaining:
 - In sentence-by-sentence paper reading, prefer one low-barrier pass followed
   by one deeper interpretation pass, rather than jumping straight to dense
   formal commentary.
+- In logic-role confusions, prefer one minimal plain example that stays close
+  to the source sentence pattern, then a direct role judgment, and only then a
+  return to the formal source object.
 - When a paragraph or section needs a synthesis block, keep that synthesis at
   the paragraph or section level instead of repeating the sentence-by-sentence
   content.
+- In long explanations, use long horizontal dividers at clear structural
+  transitions when the host environment allows them, for example after a local
+  example block, after a direct verdict, or before returning to a lower-level
+  source or a synthesis block. Do not force a divider after every paragraph.
 
 ### 5. Change Route After Repeated Blockage
 

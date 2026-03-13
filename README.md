@@ -37,17 +37,20 @@ turn the quote into paraphrase or explanation.
   - path: `codex-app-explain`
 - Restart `Codex App` after installation so the new skill is discovered.
 
-## Trigger Examples
+## Coverage
 
-- `Explain this definition step by step.`
-- `Where does this derivation step come from?`
-- `Teach me this equation from basic to rigorous.`
-
-## Non-Trigger Examples
-
-- `Remember my formatting preference.`
-- `Find this file for me.`
-- `Write the full assignment for me.`
+- four public explanation modes:
+  - `short-concept mode`
+  - `prerequisite-chain mode`
+  - `paper-sentence mode`
+  - `full-layered mode`
+- quoted-source Unicode-friendly cleanup for OCR noise or poor ASCII-style
+  symbol rendering
+- paragraph-level and section-level synthesis support in paper reading
+- source-pattern opening for logic-role confusions such as statement versus
+  proof
+- clear-transition divider guidance for long explanations when the host
+  environment supports it
 
 ## Privacy Boundary
 
@@ -71,6 +74,10 @@ This repository is the teaching-workflow half of the stack.
 - Quoted-source readability cleanup in sentence-reading belongs here as part
   of the reading workflow; a separate rendering-rules companion may still
   publish the narrower symbol-cleanup subset for display consistency.
+- Long-reply divider usage belongs here at the workflow level only in a narrow
+  sense: this skill decides where a structural transition exists, while a
+  rendering companion may still publish the narrower layout subset for how such
+  dividers are displayed.
 
 ## Repository Layout
 

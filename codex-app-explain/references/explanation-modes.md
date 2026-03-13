@@ -15,6 +15,13 @@ Default shape:
 
 Use this mode to stay local rather than expanding into a longer lecture.
 
+If the blocker is a logic-role confusion such as statement versus proof, begin
+with one minimal plain example that stays close to the source sentence pattern,
+then give the direct role judgment before returning to the formal object.
+
+If the blocker is an object-boundary confusion, use one local contrast example
+or compact counterexample at the first useful distinction point.
+
 ## 2. `prerequisite-chain mode`
 
 Use this mode when the visible question points at one local sentence or symbol,
@@ -51,6 +58,8 @@ Public behavior:
 - add a local concept note only when the sentence contains a true blocker
 - allow a paragraph-level or section-level synthesis block after the relevant
   local units
+- let the host environment own the exact labels, divider placement, and
+  sentence-block layout when separate rendering rules already exist
 
 This mode is for reading support, not for replacing the paper with a new
 summary.
@@ -69,6 +78,10 @@ Default layered order:
 1. strict definition, assumptions, and symbol roles
 2. derivation, bridge steps, or one minimal worked example
 3. intuition, interpretation, or application if it helps
+
+When long explanations contain a clear functional shift, for example from a
+local example to a formal source or from a direct verdict to a synthesis,
+prefer a visible structural separator when the host environment supports one.
 
 ## 5. Route ownership
 
