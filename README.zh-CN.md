@@ -10,6 +10,10 @@
 - `paper-sentence mode`：显式逐句 / 逐段读 paper
 - `full-layered mode`：完整重建与推导
 
+在 `paper-sentence mode` 里，如果原文引用块含有 OCR 噪声或很差的
+ASCII 风格符号，本 skill 允许做最小的 Unicode 可读性清理。这个清理
+只修显示，不改原句含义，不把原文改写成 paraphrase 或 explanation。
+
 ## 仓库交付物
 
 - 可安装 skill：
@@ -55,6 +59,9 @@
 - 它不负责持久化的个人 memory，也不负责用户私有格式偏好。
 - 如果宿主环境还有单独的 output-rules skill，那么 notation 和 layout
   应由那个 companion 负责；本 skill 继续只负责教学路线。
+- 逐句读 paper 里的原文引用可读性清理，属于这里的阅读 workflow 行为；
+  如果还有单独的 rendering-rules companion，它可以发布更窄的符号清理
+  子集来保持显示一致。
 
 ## 仓库结构
 

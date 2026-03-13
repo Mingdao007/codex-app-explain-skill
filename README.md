@@ -14,6 +14,11 @@ tasks:
 - `paper-sentence mode` for explicit sentence-by-sentence reading
 - `full-layered mode` for full rebuilds and derivations
 
+In `paper-sentence mode`, quoted source text may receive minimal Unicode-first
+readability cleanup for OCR noise or poor ASCII-style symbol rendering. The
+cleanup is display-only: preserve the original wording and meaning, and do not
+turn the quote into paraphrase or explanation.
+
 ## What Ships
 
 - installable skill:
@@ -63,6 +68,9 @@ This repository is the teaching-workflow half of the stack.
 - When a host environment provides a separate output-rules skill, that
   companion should own notation and layout while this skill continues to own
   the teaching route.
+- Quoted-source readability cleanup in sentence-reading belongs here as part
+  of the reading workflow; a separate rendering-rules companion may still
+  publish the narrower symbol-cleanup subset for display consistency.
 
 ## Repository Layout
 

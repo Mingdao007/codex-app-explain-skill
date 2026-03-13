@@ -122,6 +122,11 @@ Public mode split:
     passage-by-passage reading of a paper, PDF, or note.
   - Preserve the source sentence visibly, then explain it in a low-barrier
     pass and a deeper interpretation pass.
+  - When the quoted source contains OCR noise or poor ASCII-style symbol
+    rendering, apply minimal Unicode-friendly cleanup to improve readability.
+  - Keep that cleanup display-only: preserve the original English wording and
+    meaning, and do not paraphrase, translate, or insert explanation inside
+    the quote.
   - Add a local concept note only when that sentence contains a true blocker.
   - Optional paragraph-level and section-level synthesis may follow after the
     relevant local blocks.
@@ -152,6 +157,10 @@ Required behavior while explaining:
 - In sentence-by-sentence paper reading, keep the source text visually
   separate, preserve its wording, and let the host environment decide the exact
   labels and layout.
+- In sentence-by-sentence paper reading, quoted source text may receive
+  minimal Unicode-friendly cleanup for OCR noise or poor ASCII-style symbol
+  rendering, but that cleanup must remain display-only and must not alter the
+  source meaning.
 - In sentence-by-sentence paper reading, prefer one low-barrier pass followed
   by one deeper interpretation pass, rather than jumping straight to dense
   formal commentary.

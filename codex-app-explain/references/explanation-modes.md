@@ -42,6 +42,9 @@ Public behavior:
 - preserve the source sentence visibly
 - keep the source wording intact while allowing host-approved readability
   cleanup for OCR noise or poor symbol rendering
+- when readability cleanup is needed, use minimal Unicode-friendly symbol
+  normalization only; do not paraphrase, translate, or add explanation inside
+  the quote
 - explain each sentence in two passes:
   - one low-barrier pass
   - one deeper interpretation pass
